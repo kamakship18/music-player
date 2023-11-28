@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player
+    </title>
+    <link rel="icon" type="image/x-icon" href="https://icons-for-free.com/iconfiles/ico/256/apple+display+itunes+music+service+store+icon-1320192776779339951.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="profile_photo">
+    </div>
+    <div id="left_navigation_bar">
+        <div class="profile_name">
+            Kamakshi Pandoh
+        </div>
+        <div class="email">
+            kamakshipandoh@mail.com
+        </div>
+        <div class="box">
+            <div class="headings">
+                <h2>Browse</h2>
+             </div>
+             <div class="browse_box">
+                 <div class="browse" id="home">Home</div>
+                 <div class="browse">Playlist</div>
+                 <div class="browse">Artists</div>
+                 <div class="browse">Albums</div>
+             </div>
+             <div class="headings">
+                <h2>Discover</h2>
+             </div>
+             <div class="discover_box">
+                 <div class="discover">Radio</div>
+                 <div class="discover">Event</div>
+                 <div class="discover">Podcast</div>
+                 <div class="discover">For You&#128152;</div>
+             </div>
+        </div>
+    </div>
+    <div id="top_navigation_bar">
+        <input type="text" name="search" id="searchInput" autocomplete="off" placeholder="Search for song, artists etc...">
+        <div class="search">
+            <img onclick="performSearch()" src="https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/Search.png" alt="">
+        </div>
+    </div>
+    <div id="settings">
+        <img class="bell" src="https://github.com/HiAmanAgrawal/music_player_kalvium/blob/main/Assets/Bell.png?raw=true" alt="">
+        <img src="https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/settings.png" alt="">
+    </div>
+    <div id="results" onclick="disappear_result()">
+
+    </div>
+        <div class="headings oftop_music">
+            <h2>Top music</h2>
+        </div>
+    <div id="top_music">  
+        <div class="song" class="s1" onclick="playMe(0)">
+            <div class="s1_thumbnail top_thumbnail">
+
+            </div>
+            <div class="s1_name top_name">
+                Musafir
+            </div>
+            <div class="s1_singer top_singer">
+                Tushar Joshi
+            </div>
+        </div>
+        <div class="song" class="s2" onclick="playMe(1)">
+            <div class="s2_thumbnail top_thumbnail">
+
+            </div>
+            <div class="s2_name top_name">
+                Some of us.$
+            </div>
+            <div class="s2_singer top_singer">
+                KR$NA & AR Paisley
+            </div>
+        </div>
+        <div class="song" class="s3" onclick="playMe(2)">
+            <div class="s3_thumbnail top_thumbnail">
+
+            </div>
+            <div class="s3_name top_name">
+                love yourz
+            </div>
+            <div class="s3_singer top_singer">
+                J. Cole
+            </div>
+        </div>
+        <div class="song" class="s4" onclick="playMe(3)">
+            <div class="s4_thumbnail top_thumbnail">
+
+            </div>
+            <div class="s4_name top_name">
+                Aaj kal zindagi
+            </div>
+            <div class="s4_singer top_singer">
+                Shankar Mahadevan
+            </div>
+        </div>
+        <div class="song" class="s5" onclick="playMe(4)">
+            <div class="s5_thumbnail top_thumbnail">
+
+            </div>
+            <div class="s5_name top_name">
+                One love
+            </div>
+            <div class="s5_singer top_singer">
+                Shubh
+            </div>
+        </div>
+        <div class="song" class="s6" onclick="playMe(5)">
+            <div class="s6_thumbnail top_thumbnail">
+
+            </div>
+            <div class="s6_name top_name">
+                Iraaday
+            </div>
+            <div class="s6_singer top_singer">
+                Abdul Hannan & Rovalio
+            </div>
+        </div>
+        <div class="song" class="s7" onclick="playMe(6)">
+            <div class="s7_thumbnail top_thumbnail">
+
+            </div>
+            <div class="s7_name top_name">
+                Rank 1
+            </div>
+            <div class="s7_singer top_singer">
+                Jordan Sandhu
+            </div>
+        </div>
+        <div class="song" class="s8" onclick="playMe(7)">
+            <div class="s8_thumbnail top_thumbnail">
+
+            </div>
+            <div class="s8_name top_name">
+                Check it out.
+            </div>
+            <div class="s8_singer top_singer">
+                Parmish Verma Ft. Paradox
+            </div>
+        </div>
+        <div class="song" class="s9" onclick="playMe(8)">
+            <div class="s9_thumbnail top_thumbnail">
+
+            </div>
+            <div class="s9_name top_name">
+                Mathi Mathi
+            </div>
+            <div class="s9_singer top_singer">
+                Karan Randhawa
+            </div>
+        </div>
+        <div class="song" class="s10" onclick="playMe(9)">
+            <div class="s10_thumbnail top_thumbnail">
+
+            </div>
+            <div class="s10_name top_name">
+                She don't know
+            </div>
+            <div class="s10_singer top_singer">
+                Millind Gaba
+            </div>
+        </div>
+    </div>
+    <div class="headings ofpopular">
+        <h2>Popular</h2>
+    </div>
+    <div id="popular">
+        <div class="pplr" class="s1" onclick="playMe(0)">
+            <div class="s1_thumbnail popular_thumbnail">
+
+            </div>
+            <div class="s1_name popular_name">
+                Musafir
+            </div>
+            <div class="s1_singer popular_singer">
+                Tushar Joshi
+            </div>
+        </div>
+        <div class="pplr" class="s2" onclick="playMe(1)">
+            <div class="s2_thumbnail popular_thumbnail">
+                
+            </div>
+            <div class="s2_name popular_name">
+                Some of us.$
+            </div>
+            <div class="s2_singer popular_singer">
+                KR$NA & AR Paisley
+            </div>
+        </div>
+        <div class="pplr" class="s3" onclick="playMe(2)">
+            <div class="s3_thumbnail popular_thumbnail">
+
+            </div>
+            <div class="s3_name popular_name">
+                love yourz
+            </div>
+            <div class="s3_singer popular_singer">
+                J. Cole
+            </div>
+        </div>
+        <div class="pplr" class="s4"  onclick="playMe(3)">
+            <div class="s4_thumbnail popular_thumbnail">
+
+            </div>
+            <div class="s4_name popular_name">
+                Aaj kal zindagi
+            </div>
+            <div class="s4_singer popular_singer">
+                Shankar Mahadevan
+            </div>
+        </div>
+        <div class="pplr" class="s5" onclick="playMe(4)">
+            <div class="s5_thumbnail popular_thumbnail" >
+
+            </div>
+            <div class="s5_name popular_name">
+                One love
+            </div>
+            <div class="s5_singer popular_singer">
+                Shubh
+            </div>
+        </div>
+        <div class="pplr" class="s6" onclick="playMe(5)">
+            <div class="s6_thumbnail popular_thumbnail" >
+
+            </div>
+            <div class="s6_name popular_name">
+                Iraaday
+            </div>
+            <div class="s6_singer popular_singer">
+                Abdul Hannan & Rovalio
+            </div>
+        </div>
+        <div class="pplr" class="s7" onclick="playMe(6)">
+            <div class="s7_thumbnail popular_thumbnail">
+
+            </div>
+            <div class="s7_name popular_name">
+                Rank 1
+            </div>
+            <div class="s7_singer popular_singer">
+                Jordan Sandhu
+            </div>
+        </div>
+        <div class="pplr" class="s8" onclick="playMe(7)">
+            <div class="s8_thumbnail popular_thumbnail">
+
+            </div>
+            <div class="s8_name popular_name">
+                Check it out
+            </div>
+            <div class="s8_singer popular_singer">
+                Parmish Verma Ft. Paradox
+            </div>
+        </div>
+        <div class="pplr" class="s9" onclick="playMe(8)">
+            <div class="s9_thumbnail popular_thumbnail">
+
+            </div>
+            <div class="s9_name popular_name">
+                Mathi Mathi
+            </div>
+            <div class="s9_singer popular_singer">
+                Karan Randhawa
+            </div>
+        </div>
+        <div class="pplr" class="s10" onclick="playMe(9)">
+            <div class="s10_thumbnail popular_thumbnail">
+
+            </div>
+            <div class="s10_name popular_name">
+                She don't know
+            </div>
+            <div class="s10_singer popular_singer">
+                Millind Gaba
+            </div>
+        </div>
+    </div>
+    <div class="headings ofalbum">
+        <h2>Albums</h2>
+    </div>
+    <div id="albums">
+        <div class="album album1">
+            <img src="https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/Ed%20sheeran%20album.png" alt="" width="200px">
+        </div>
+        <div class="album album2">
+            <img src="https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/Anne-Marie_-_Therapy.png" alt="">
+        </div>
+        <div class="album album3">
+            <img src="https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/Taylor_Swift_-_1989%20album.png" alt="">
+        </div>
+        <div class="album album4">
+            <img src="https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/Maroon%205%20album.jpg" alt="">
+        </div>
+        <div class="album album5">
+            <img src="https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/Justin_Bieber_-justice%20album.png" alt="">
+        </div>
+        <div class="album album6">
+            <img src="https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/One%20Badshah%20album.jpeg" alt="">
+        </div>
+        <div class="album album7">
+            <img src="https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/Sabrina_Carpenter_album.png" alt="">
+        </div>
+    </div>
+    <div id="track_menu">
+        <div id="play_thumbnail">
+
+        </div>
+        <div id="play_name">
+            One Love
+        </div>
+        <div id="play_singer">
+            Shubh
+        </div>  
+        <div class="music-player">
+            <div class="controls">
+                <button id="prev"><img src="https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/revert.png" width="43px" alt=""></button>
+                <button id="play-pause"><img src="https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/play.png" width="40px" alt=""></button>
+                <button id="next"><img src="https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/forward.png" width="43px" alt=""></button>
+             </div> 
+            <audio id="audio-player" src="https://cdnsongs.com/music/data/Single_Track/202308/One_Love/128/One_Love_1.mp3" controls></audio>
+        </div>  
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
