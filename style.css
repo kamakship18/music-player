@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:ital,wght@0,100;1,500&family=Roboto+Slab&family=Ubuntu&family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,500&family=Roboto+Slab&family=Ubuntu&family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,500&family=Roboto+Slab&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,500&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    background: url("https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#profile_photo{
+    position: fixed;
+    top: 11px;
+    left: 111px;
+    height: 100px;
+    width: 100px;
+    background: url("https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/Profile%20Photo.png");
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-size: cover;
+}
+#left_navigation_bar{
+    position: fixed;
+    top: 42px;
+    left: 29px;
+    width: 263px;
+    height: 573px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 73px;
+    padding-left: 9px;
+}
+#top_navigation_bar{
+    position: fixed;
+    top: 10px;
+    right: 27px;
+    height: 57px;
+    width: 1153px;
+    display: flex;
+}
+#settings img{
+    position: relative;
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    margin: 3px;
+    left: 1350px;
+    top: 8px;
+}
+#top_music{
+    display: flex;
+    position: absolute;
+    top: 70px;
+    right: 27px;
+    height: 268px;
+    width: 1153px;
+    overflow: auto;
+    overflow-x: scroll;
+}
+#top_music::-webkit-scrollbar{
+    display: none;
+}
+#popular{
+    position: absolute;
+    top: 374px;
+    right: 800px;
+    height: 262px;
+    width: 381px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    border-radius: 10px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+#popular::-webkit-scrollbar{
+    display: none;
+}
+#albums{
+    display: flex;
+    position: absolute;
+    top: 373px;
+    right: 27px;
+    height: 262px;
+    width: 763px;
+    overflow: auto;
+    overflow-x: scroll;
+}
+#albums::-webkit-scrollbar{
+    display: none;
+}
+.s1_thumbnail{
+    background-image: url(https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/Musafir.jpg);
+    background-size: cover;
+}
+.s2_thumbnail{
+    background-image: url(https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/Some%20of%20us.jpg);
+    background-size: cover;
+}
+.s3_thumbnail{
+    background-image: url(https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/Love%20Yourz.jpg);
+    background-size: cover;
+}
+.s4_thumbnail{
+    background-image: url(https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/Aaj%20kal%20zindagi.jpeg);
+    background-size: cover;
+}
+.s5_thumbnail{
+    background-image: url(https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/One%20love.jpeg);
+    background-size: cover;
+}
+.s6_thumbnail{
+    background-image: url(https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/Iraaday.jpg);
+    background-size: cover;
+}
+.s7_thumbnail{
+    background-image: url(https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/Rank%201.jpg);
+    background-size: cover;
+}
+.s8_thumbnail{
+    background-image: url(https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/Check%20it%20out.jpg);
+    background-size: cover;
+}
+.s9_thumbnail{
+    background-image: url(https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/Mathi%20Mathi.jpg);
+    background-size: cover;
+}
+.s10_thumbnail{
+    background-image: url(https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/She%20dont%20know.jpg);
+    background-size: cover;
+}
+#track_menu{
+    display: flex;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    height: 85px;
+    width: 1470px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.top_name , .popular_name ,#play_name{
+ font-family: 'Roboto Slab', serif;
+ font-weight: 600;
+ font-size: 1.1em;
+}
+.top_singer , .popular_singer ,#play_singer {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.8em;
+   }
+#revert{
+    background-image: url(https://github.com/HiAmanAgrawal/music_player_kalvium/blob/main/Assets/revert.png?raw=true);
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    margin: 15px 11px 15px 42px;
+}
+#play{
+    background-image: url(https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/play.png);
+    background-size: cover;
+    height: 51px;
+    width: 47px;
+    margin: 14px 11px 15px 0px;
+    visibility: visible;
+}
+#pause{
+    background-image: url(https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/pause.png);
+    background-size: cover;
+    height: 51px;
+    width: 47px;
+    margin: 16px 13px 8px -58px;
+    visibility: hidden;
+}
+#forward{
+    background-image: url(https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/forward.png);
+    background-size: cover;
+    height: 44px;
+    width: 45px;
+    margin: 19px 11px 6px -2px;
+    visibility: visible;
+}
+#play_thumbnail
+{
+    background-image: url("https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/One%20love.jpeg");
+    background-size: cover;
+    position: relative;
+    left: 58px;
+    margin: 5px;
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+}
+#play_name{
+    position: absolute;
+    left: 159px;
+    top: 20px;
+}
+#play_singer{
+    position: absolute;
+    left: 160px;
+    top: 44px;
+}
+input{
+    width: 583px;
+    height: 35px;
+    border: none;
+    border-bottom: 2px solid #ff0005;
+    color: #8F888F;
+    padding: 1px 10px;
+    margin: 11px;
+    margin-left: 260px;
+    font-size: 13px;
+    font-weight: 800;
+    border-radius: 10px;
+    border-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    cursor: pointer;
+}
+.search img{
+    position: fixed;
+    width: 34px;
+    top: 21px;
+    right: 341px;
+    cursor: pointer;
+}
+#top_music .song{
+    width: 207px;
+    height: 224px;
+    margin-left: 10px;
+    flex-direction: row;
+    flex-shrink: 0;
+    margin-top: 29px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    text-align: center;
+}
+#top_music .song:hover{
+    background-color: rgba(240, 248, 255,0.1);
+    
+}
+.top_thumbnail{
+    margin: 10px auto;
+    position: relative;
+    width: 179px;
+    height: 176px;
+    margin-bottom: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+h2{
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+    cursor: default;
+}
+#results{
+    position: fixed;
+    display: none;
+    top: 67px;
+    right: 336px;
+    width: 585px;
+    height: 234px;
+    background-color: white;
+    border-radius: 10px;
+    visibility: visible;
+    z-index: 2;
+}
+
+#popular .pplr{
+    position: relative;
+    margin: 4px;
+    min-width: 348px;
+    min-height: 55px;
+    border-radius: 26px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    background-color: rgba(240, 248, 255,0.1);
+
+}
+.popular_thumbnail{
+    width: 42px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 7.5px;
+    margin-left: 43px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.popular_name{
+    display: block;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.popular_singer{
+    position: absolute;
+    top: 31px;
+    left: 94px;
+}
+.oftop_music{
+    position: absolute;
+    left: 299px;
+    top: 68px;
+}
+.ofpopular{
+    position: absolute;
+    top: 344px;
+    left: 303px;
+}
+.ofalbum{
+    position: absolute;
+    top: 344px;
+    left: 711px;
+}
+#popular .pplr:hover{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.music-player{
+    width: 80%;
+    position: absolute;
+    top: 5px;
+    right: -65px;
+    display: flex
+}
+.controls button{
+    margin-top: 15px;
+    margin-right: -5px;
+    background-color: white;
+    border: white solid 0px;
+    border-color: white;
+}
+audio{
+    width: 80%;
+    height: 64px;
+}
+.album{
+    background-image: url(https://raw.githubusercontent.com/HiAmanAgrawal/music_player_kalvium/main/Assets/Album.png);
+    background-size: cover;
+    position: relative;
+    width: 316px;
+    height: 233px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+.album:hover{
+    background-color: rgba(226, 120, 129, 0.3);
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.album img{
+    width: 209px;
+    height: 202px;
+    margin: 16px;
+}
+.profile_name , .email{
+    text-align: center;
+    cursor: default;
+}
+.box{
+    margin: 50px;
+}
+.browse , .discover{
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.browse:hover , .discover:hover{
+    background-color: #dadada;
+}
+#home{
+    background-color: #dadada;
+}
